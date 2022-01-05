@@ -6,6 +6,19 @@ h3{
     font-size: 25px !important;
 }
 canvas{
+    margin-top: 55px;
     border-style:dashed;
-    margin-top:55px;
+    animation-name: canvas_bg;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    border-width: 5px;
+    border-color: red;
+}
+@keyframes canvas_bg
+{
+  0% {box-shadow: 20px 10px 38px rgb(105, 17, 17);}
+ 25% {box-shadow: 20px 10px 38px rgb(255, 0, 0);}
+ 50% {box-shadow: 20px 10px 38px rgb(0, 26, 255);}
+ 75% {box-shadow: 20px 10px 38px rgb(238, 255, 0);}
+100% {box-shadow: 20px 10px 38px rgb(247, 0, 255);} 
 }
